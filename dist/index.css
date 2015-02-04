@@ -1,0 +1,34 @@
+.line-b {
+  background-image: url(img/repeat-x-bottom.png);
+  background-position: 0 bottom;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.line-t {
+  background-image: url(img/repeat-x-top.png);
+  background-position: 0 top;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.line-tb {
+  background: url(img/repeat-x-top.png) 0 top repeat-x, url(img/repeat-x-bottom.png) 0px bottom repeat-x;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.line-l {
+  background-image: url(img/repeat-x-left.png);
+  background-position: left 0;
+  background-size: 1px auto;
+  background-repeat: repeat-y;
+}
+.line-r {
+  background-image: url(img/repeat-x-right.png);
+  background-position: right 0;
+  background-size: 1px auto;
+  background-repeat: repeat-y;
+}
+.line-lr {
+  background: url(img/repeat-y-left.png) left 0px repeat-y, url(img/repeat-y-right.png) right 0px repeat-y;
+  background-size: 1px auto;
+  background-repeat: repeat-y;
+}
