@@ -11,7 +11,7 @@ gulp.task('img', function(){
 });
 
 gulp.task('less', function() {
-  gulp.src('src/index.less')
+  gulp.src('src/ns.less')
     .pipe(less({
       paths: [
         path.join(__dirname, 'less')
