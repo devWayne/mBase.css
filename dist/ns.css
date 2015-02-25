@@ -16,13 +16,13 @@
   background-repeat: repeat-x;
 }
 .line-l {
-  background-image: url(img/repeat-x-left.png);
+  background-image: url(img/repeat-y-left.png);
   background-position: left 0;
   background-size: 1px auto;
   background-repeat: repeat-y;
 }
 .line-r {
-  background-image: url(img/repeat-x-right.png);
+  background-image: url(img/repeat-y-right.png);
   background-position: right 0;
   background-size: 1px auto;
   background-repeat: repeat-y;
