@@ -17,6 +17,10 @@
   "homepage": "https://github.com/devWayne/ns.css",
   "dependencies": {
     "gulp": "~3.8.10",
-    "gulp-less": "~2.0.1"
+    "gulp-less": "~2.0.1",
+    "gulp-postcss": "~4.0.3",
+    "autoprefixer-core": "~5.1.7",
+    "css-mqpacker": "~3.0.1",
+    "csswring": "~3.0.1"
   }
 }

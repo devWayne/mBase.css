@@ -4,6 +4,11 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var path = require('path');
 
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer-core');
+var mqpacker = require('css-mqpacker');
+var csswring = require('csswring');
+
 
 gulp.task('img', function(){
   gulp.src('src/img/**/*')
@@ -18,11 +23,22 @@ gulp.task('less', function() {
       ]
     }))
     .on('error', console.error)
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('css/'));
 
   gulp.src('src/img/**/*')
     .pipe(gulp.dest('dist/img/'));
 
 });
 
-gulp.task('default', ['less'])
+gulp.task('postcss', function () {
+    var processors = [
+        autoprefixer({browsers: ['last 1 version']}),
+        mqpacker,
+        csswring
+    ];
+    return gulp.src('less/*.css')
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('default', ['less','postcss'])
