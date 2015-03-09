@@ -3,11 +3,22 @@
 
 Powered by Less & Postcss
 
-#Usage
+# Usage
 
-1. run : `npm install` to install the dependencies
-2. run : `gulp` to compile and uglify the css source files
-3. the compiled css file is in the dist folder
+**Install with Bower:**
+
+```shell
+$ bower install --save ns.css
+```
+
+# Build From Source
+
+```shell
+$ git clone https://github.com/devWayne/ns.css.git
+$ cd ns.css
+$ npm install
+$ gulp
+```
 
 #Modules
 
@@ -15,7 +26,9 @@ ns.css is based on three parts of modoles : Base,Wigets and Hacks
 
 ##Base
 
-###grid
+1. grid
+
+A responsive grid that can be customized to your needs.
 
 ###button
 
