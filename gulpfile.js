@@ -36,7 +36,7 @@ gulp.task('postcss', function () {
         mqpacker,
         csswring
     ];
-    return gulp.src('less/*.css')
+    return gulp.src('css/*.css')
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dist'));
 });
