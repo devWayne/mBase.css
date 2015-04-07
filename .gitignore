@@ -31,3 +31,5 @@ node_modules
 *.swp
 *.swo
 bower_components
+
+css/normalize-css
