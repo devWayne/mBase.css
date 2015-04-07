@@ -15,12 +15,15 @@
     "url": "https://github.com/devWayne/ns.css/issues"
   },
   "homepage": "https://github.com/devWayne/ns.css",
-  "dependencies": {
-    "gulp": "~3.8.10",
-    "gulp-less": "~2.0.1",
-    "gulp-postcss": "~4.0.3",
+  "devDependencies": {
     "autoprefixer-core": "~5.1.7",
     "css-mqpacker": "~3.0.1",
-    "csswring": "~3.0.1"
+    "csswring": "~3.0.1",
+    "del": "^1.1.1",
+    "gulp": "~3.8.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-less": "~2.0.1",
+    "gulp-postcss": "~4.0.3",
+    "gulp-run-sequence": "^0.3.2"
   }
 }

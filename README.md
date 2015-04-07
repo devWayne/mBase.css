@@ -22,16 +22,35 @@ $ gulp
 
 #Modules
 
-ns.css is based on three parts of modoles : Base,Wigets and Hacks
+ns.css is based on three parts of modules : Base,Wigets and Hacks
 
 ##Base
 
 1. grid
 
-A responsive grid that can be customized to your needs.
+2. form
 
-###button
+3. table
 
-##Widgets
+##Elements
 
-##Hacks 
+1. buttton
+
+2. arrow
+
+3. line
+
+4. select
+
+5. star
+
+6. banner
+
+##Text
+
+##Common
+
+
+
+
+

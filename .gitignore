@@ -30,3 +30,4 @@ node_modules
 .DS_Store
 *.swp
 *.swo
+bower_components

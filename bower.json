@@ -8,7 +8,9 @@
   "description": "ns.css",
   "main": "dist/ns.css",
   "license": "MIT",
-  "private": true,
+  "dependencies": {
+   "normalize-css": "3.0.3" 
+  },
   "ignore": [
     "node_modules",
     "bower_components",
