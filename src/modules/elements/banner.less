@@ -5,7 +5,29 @@
 	line-height: 38px;
 }
 
+.banner-icon{
+	background:url('img/icon.png') no-repeat;
+	display: inline-block;
+  	width: 20px;
+  	height: 20px;
+	margin: 0 5px;
+  	vertical-align: middle;
+  	background-size: 30px auto;
+	&.proceed-icon{
+  		background-position: -5px -220px;
+	}
+	&.failed-icon{
+		background-position: -5px -177px;
+	}
+	&.success-icon{
+		background-position: -5px -199px;	
+	}
+}
+
 .ns-banner-primary{
+	.ns-banner();
+}
+.ns-banner-proceed{
 	.ns-banner();
 	background-color:#f0b035;
 }
@@ -13,16 +35,15 @@
 .ns-banner-failed{
 	.ns-banner();
 	background-color:#c02e11;
-
 }
 
 .ns-banner-success{
 	.ns-banner();
 	background-color:#65c07a;
-
 }
 
 .ns-banner-disable{
 	.ns-banner();
 	background-color:#bbbbbb;	
 }
+

@@ -217,7 +217,31 @@
   background-size: 195px auto;
   background-position: 3px -170px;
 }
+.banner-icon {
+  background: url('img/icon.png') no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: middle;
+  background-size: 30px auto;
+}
+.banner-icon.proceed-icon {
+  background-position: -5px -220px;
+}
+.banner-icon.failed-icon {
+  background-position: -5px -177px;
+}
+.banner-icon.success-icon {
+  background-position: -5px -199px;
+}
 .ns-banner-primary {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 38px;
+}
+.ns-banner-proceed {
   color: #fff;
   font-size: 15px;
   text-align: center;
@@ -244,6 +268,33 @@
   text-align: center;
   line-height: 38px;
   background-color: #bbbbbb;
+}
+.ns-select {
+  background: url(img/icon.png) no-repeat;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  vertical-align: middle;
+  background-size: 50px auto;
+}
+.ns-select.single-selected {
+  background-position: 0px -55px;
+}
+.ns-select.single-unselected {
+  background-position: 0px -101px;
+}
+.ns-select.single-disable {
+  background-position: 0px -8px;
+}
+.ns-select.mutiple-disable {
+  background-position: 0px -146px;
+}
+.ns-select.mutiple-selected {
+  background-position: 0px -194px;
+}
+.ns-select.mutiple-unselected {
+  background-position: 0px -242px;
 }
 .ns-g {
   display: -webkit-flex;
