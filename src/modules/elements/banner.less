@@ -1,11 +1,30 @@
-.ns-banner(){
+.ns-banner{
 	color:#fff;
 	font-size: 15px;
 	text-align: center;
 	line-height: 38px;
+	&-primary{
+		
+	}
+	&-proceed{
+		background-color:#f0b035;
+	}
+
+	&-failed{
+		background-color:#c02e11;
+	}
+
+	&-success{
+		background-color:#65c07a;
+	}
+
+	&-disable{
+		background-color:#bbbbbb;	
+	}
+
 }
 
-.banner-icon{
+.ns-banner-icon{
 	background:url('img/icon.png') no-repeat;
 	display: inline-block;
   	width: 20px;
@@ -13,37 +32,15 @@
 	margin: 0 5px;
   	vertical-align: middle;
   	background-size: 30px auto;
-	&.proceed-icon{
+	&-proceed{
   		background-position: -5px -220px;
 	}
-	&.failed-icon{
+	&-failed{
 		background-position: -5px -177px;
 	}
-	&.success-icon{
+	&-success{
 		background-position: -5px -199px;	
 	}
 }
 
-.ns-banner-primary{
-	.ns-banner();
-}
-.ns-banner-proceed{
-	.ns-banner();
-	background-color:#f0b035;
-}
-
-.ns-banner-failed{
-	.ns-banner();
-	background-color:#c02e11;
-}
-
-.ns-banner-success{
-	.ns-banner();
-	background-color:#65c07a;
-}
-
-.ns-banner-disable{
-	.ns-banner();
-	background-color:#bbbbbb;	
-}
 

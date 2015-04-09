@@ -217,7 +217,25 @@
   background-size: 195px auto;
   background-position: 3px -170px;
 }
-.banner-icon {
+.ns-banner {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 38px;
+}
+.ns-banner-proceed {
+  background-color: #f0b035;
+}
+.ns-banner-failed {
+  background-color: #c02e11;
+}
+.ns-banner-success {
+  background-color: #65c07a;
+}
+.ns-banner-disable {
+  background-color: #bbbbbb;
+}
+.ns-banner-icon {
   background: url('img/icon.png') no-repeat;
   display: inline-block;
   width: 20px;
@@ -226,48 +244,14 @@
   vertical-align: middle;
   background-size: 30px auto;
 }
-.banner-icon.proceed-icon {
+.ns-banner-icon-proceed {
   background-position: -5px -220px;
 }
-.banner-icon.failed-icon {
+.ns-banner-icon-failed {
   background-position: -5px -177px;
 }
-.banner-icon.success-icon {
+.ns-banner-icon-success {
   background-position: -5px -199px;
-}
-.ns-banner-primary {
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  line-height: 38px;
-}
-.ns-banner-proceed {
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  line-height: 38px;
-  background-color: #f0b035;
-}
-.ns-banner-failed {
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  line-height: 38px;
-  background-color: #c02e11;
-}
-.ns-banner-success {
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  line-height: 38px;
-  background-color: #65c07a;
-}
-.ns-banner-disable {
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  line-height: 38px;
-  background-color: #bbbbbb;
 }
 .ns-select {
   background: url(img/icon.png) no-repeat;
@@ -295,6 +279,57 @@
 }
 .ns-select.mutiple-unselected {
   background-position: 0px -242px;
+}
+.ns-line-b {
+  background-image: url(img/repeat-x-bottom.png);
+  background-position: 0 bottom;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-t {
+  background-image: url(img/repeat-x-top.png);
+  background-position: 0 top;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-tb {
+  background: url(img/repeat-x-top.png) 0 top repeat-x, url(img/repeat-x-bottom.png) 0px bottom repeat-x;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-b-outline {
+  background-image: url(img/repeat-x-bottom-outline.png);
+  background-position: 0 bottom;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-t-outline {
+  background-image: url(img/repeat-x-top-outline.png);
+  background-position: 0 top;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-tb-outline {
+  background: url(img/repeat-x-top-outline.png) 0 top repeat-x, url(img/repeat-x-bottom-outline.png) 0px bottom repeat-x;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-l {
+  background-image: url(img/repeat-y-left.png);
+  background-position: left 0;
+  background-size: 1px auto;
+  background-repeat: repeat-y;
+}
+.ns-line-r {
+  background-image: url(img/repeat-y-right.png);
+  background-position: right 0;
+  background-size: 1px auto;
+  background-repeat: repeat-y;
+}
+.ns-line-lr {
+  background: url(img/repeat-y-left.png) left 0px repeat-y, url(img/repeat-y-right.png) right 0px repeat-y;
+  background-size: 1px auto;
+  background-repeat: repeat-y;
 }
 .ns-g {
   display: -webkit-flex;
@@ -459,53 +494,20 @@
 .ns-g-24-24 {
   width: 100%;
 }
-.ns-ft12 {
-  font-size: 12px;
-  line-height: 14px;
-}
-.ns-ft13 {
-  font-size: 13px;
-  line-height: 15px;
-}
-.ns-ft14 {
-  font-size: 14px;
-  line-height: 16px;
-}
-.ns-ft15 {
-  font-size: 15px;
-  line-height: 17px;
-}
-.ns-ft16 {
-  font-size: 16px;
-  line-height: 18px;
-}
-.ns-ft17 {
-  font-size: 17px;
-  line-height: 19px;
-}
-.ns-ft18 {
-  font-size: 18px;
-  line-height: 20px;
-}
-.ns-ft19 {
-  font-size: 19px;
-  line-height: 21px;
-}
-.ns-ft20 {
-  font-size: 20px;
-  line-height: 22px;
-}
-.ns-ft21 {
-  font-size: 21px;
-  line-height: 23px;
-}
-.ns-ft22 {
-  font-size: 22px;
-  line-height: 24px;
-}
 .ns-fl {
   float: left !important;
 }
 .ns-fr {
   float: right !important;
+}
+.ns-text-ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.ns-text-ellipsis-2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
