@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var path = require('path');
 var concat = require('gulp-concat');
-var runSequence = require('gulp-run-sequence');
+var runSequence = require('run-sequence');
 
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer-core');
@@ -24,7 +24,7 @@ gulp.task('less', function() {
         path.join(__dirname, 'less')
       ]
     }))
-    .on('error', console.error)
+    //.on('error', console.error)
     .pipe(gulp.dest('css/ns-css'));
 });
 
@@ -49,7 +49,7 @@ gulp.task('clean', function(done) {
 
 
 gulp.task('default', function(cb) {
-  runSequence('clean','less','img','postcss', cb);
+  runSequence('clean',['less','img'],'postcss', cb);
 });
 
 gulp.task('watch', function() {
