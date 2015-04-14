@@ -76,36 +76,53 @@
   transform: rotate(-225deg);
 }
 .ns-line-b {
-  background-image: url(img/repeat-x-bottom.png);
+  background-image: url("img/line/repeat-x-bottom.png");
   background-position: 0 bottom;
   background-size: auto 1px;
   background-repeat: repeat-x;
 }
 .ns-line-t {
-  background-image: url(img/repeat-x-top.png);
+  background-image: url("img/line/repeat-x-top.png");
   background-position: 0 top;
   background-size: auto 1px;
   background-repeat: repeat-x;
 }
 .ns-line-tb {
-  background: url(img/repeat-x-top.png) 0 top repeat-x, url(img/repeat-x-bottom.png) 0px bottom repeat-x;
+  background: url("img/line/repeat-x-top.png") 0 top repeat-x, url("img/line/repeat-x-bottom.png") 0px bottom repeat-x;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-b-outline {
+  background-image: url("img/line/repeat-x-bottom-outline.png");
+  background-position: 0 bottom;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-t-outline {
+  background-image: url("img/line/repeat-x-top-outline.png");
+  background-position: 0 top;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-line-tb-outline {
+  background: url("img/line/repeat-x-top-outline.png") 0 top repeat-x, url("img/line/repeat-x-bottom-outline.png") 0px bottom repeat-x;
   background-size: auto 1px;
   background-repeat: repeat-x;
 }
 .ns-line-l {
-  background-image: url(img/repeat-y-left.png);
+  background-image: url("img/line/repeat-y-left.png");
   background-position: left 0;
   background-size: 1px auto;
   background-repeat: repeat-y;
 }
 .ns-line-r {
-  background-image: url(img/repeat-y-right.png);
+  background-image: url("img/line/repeat-y-right.png");
   background-position: right 0;
   background-size: 1px auto;
   background-repeat: repeat-y;
 }
 .ns-line-lr {
-  background: url(img/repeat-y-left.png) left 0px repeat-y, url(img/repeat-y-right.png) right 0px repeat-y;
+  background: url("img/line/repeat-y-left.png") left 0px repeat-y, url("img/line/repeat-y-right.png") right 0px repeat-y;
   background-size: 1px auto;
   background-repeat: repeat-y;
 }
@@ -217,44 +234,8 @@
   background-size: 195px auto;
   background-position: 3px -170px;
 }
-.ns-banner {
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  line-height: 38px;
-}
-.ns-banner-proceed {
-  background-color: #f0b035;
-}
-.ns-banner-failed {
-  background-color: #c02e11;
-}
-.ns-banner-success {
-  background-color: #65c07a;
-}
-.ns-banner-disable {
-  background-color: #bbbbbb;
-}
-.ns-banner-icon {
-  background: url('img/icon.png') no-repeat;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  vertical-align: middle;
-  background-size: 30px auto;
-}
-.ns-banner-icon-proceed {
-  background-position: -5px -220px;
-}
-.ns-banner-icon-failed {
-  background-position: -5px -177px;
-}
-.ns-banner-icon-success {
-  background-position: -5px -199px;
-}
 .ns-select {
-  background: url(img/icon.png) no-repeat;
+  background: url("img/icon.png") no-repeat;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -280,56 +261,93 @@
 .ns-select.mutiple-unselected {
   background-position: 0px -242px;
 }
-.ns-line-b {
-  background-image: url(img/repeat-x-bottom.png);
+.ns-banner {
+  color: #e58f1f;
+  font-size: 15px;
+  text-align: center;
+  line-height: 38px;
+  background-color: #fff3db;
+}
+.ns-banner .arrow-fix {
+  right: 10px;
+  top: 13px;
+}
+.ns-tip {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 38px;
+}
+.ns-tip.proceed {
+  background-color: #f0b035;
+}
+.ns-tip.failed {
+  background-color: #c02e11;
+}
+.ns-tip.success {
+  background-color: #65c07a;
+}
+.ns-tip.disable {
+  background-color: #bbbbbb;
+}
+.ns-tip-icon {
+  background: url("img/icon.png") no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: middle;
+  background-size: 30px auto;
+}
+.ns-tip-icon.proceed {
+  background-position: -5px -220px;
+}
+.ns-tip-icon.failed {
+  background-position: -5px -177px;
+}
+.ns-tip-icon.success {
+  background-position: -5px -199px;
+}
+.ns-list-wrapper {
+  background: url("img/line/repeat-x-top-outline.png") 0 top repeat-x, url("img/line/repeat-x-bottom-outline.png") 0px bottom repeat-x;
+  background-size: auto 1px;
+  background-repeat: repeat-x;
+}
+.ns-list-wrapper .ns-list-content {
+  margin: 0 0 0 20px;
+}
+.ns-list-wrapper .ns-list-content .ns-list-line {
+  padding: 14px 16px 14px 16px;
+  margin: 0px;
+  background-image: url("img/line/repeat-x-bottom.png");
   background-position: 0 bottom;
   background-size: auto 1px;
   background-repeat: repeat-x;
 }
-.ns-line-t {
-  background-image: url(img/repeat-x-top.png);
-  background-position: 0 top;
-  background-size: auto 1px;
-  background-repeat: repeat-x;
+.ns-caption {
+  color: #333333;
+  font-size: 15px;
+  text-align: left;
+  line-height: 150px;
+  background-color: #f0f0f0;
+  height: 150px;
 }
-.ns-line-tb {
-  background: url(img/repeat-x-top.png) 0 top repeat-x, url(img/repeat-x-bottom.png) 0px bottom repeat-x;
-  background-size: auto 1px;
-  background-repeat: repeat-x;
+.ns-caption .icon-wrapper {
+  width: 40%;
 }
-.ns-line-b-outline {
-  background-image: url(img/repeat-x-bottom-outline.png);
-  background-position: 0 bottom;
-  background-size: auto 1px;
-  background-repeat: repeat-x;
+.ns-caption .icon-wrapper i {
+  background: url("img/dp.png") no-repeat center;
+  display: inline-block;
+  width: 100px;
+  height: 120px;
+  background-size: 200px 120px;
+  margin-top: 15px;
 }
-.ns-line-t-outline {
-  background-image: url(img/repeat-x-top-outline.png);
-  background-position: 0 top;
-  background-size: auto 1px;
-  background-repeat: repeat-x;
+.ns-caption .icon-wrapper i.icon-tp1 {
+  background-position: -5px -4px;
 }
-.ns-line-tb-outline {
-  background: url(img/repeat-x-top-outline.png) 0 top repeat-x, url(img/repeat-x-bottom-outline.png) 0px bottom repeat-x;
-  background-size: auto 1px;
-  background-repeat: repeat-x;
-}
-.ns-line-l {
-  background-image: url(img/repeat-y-left.png);
-  background-position: left 0;
-  background-size: 1px auto;
-  background-repeat: repeat-y;
-}
-.ns-line-r {
-  background-image: url(img/repeat-y-right.png);
-  background-position: right 0;
-  background-size: 1px auto;
-  background-repeat: repeat-y;
-}
-.ns-line-lr {
-  background: url(img/repeat-y-left.png) left 0px repeat-y, url(img/repeat-y-right.png) right 0px repeat-y;
-  background-size: 1px auto;
-  background-repeat: repeat-y;
+.ns-caption .icon-wrapper i.icon-tp2 {
+  background-position: -100px -4px;
 }
 .ns-g {
   display: -webkit-flex;

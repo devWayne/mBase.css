@@ -49,7 +49,7 @@ gulp.task('clean', function(done) {
 
 
 gulp.task('default', function(cb) {
-  runSequence('clean',['less','img'],'postcss', cb);
+  runSequence('clean','less','img','postcss', cb);
 });
 
 gulp.task('watch', function() {
