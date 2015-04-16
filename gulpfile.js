@@ -18,14 +18,14 @@ gulp.task('img', function(){
 });
 
 gulp.task('less', function() {
-  gulp.src('src/ns.less')
+  gulp.src('src/mb.less')
     .pipe(less({
       paths: [
         path.join(__dirname, 'less')
       ]
     }))
     //.on('error', console.error)
-    .pipe(gulp.dest('css/ns-css'));
+    .pipe(gulp.dest('css/mb-css'));
 });
 
 gulp.task('postcss', function () {
@@ -35,7 +35,7 @@ gulp.task('postcss', function () {
         csswring
     ];
     return gulp.src('css/**/*.css')
-    	.pipe(concat('ns.css'))
+    	.pipe(concat('mb.css'))
         .pipe(postcss(processors))
         .pipe(gulp.dest('dist'));
 });
@@ -43,7 +43,7 @@ gulp.task('postcss', function () {
 
 gulp.task('clean', function(done) {
     require('del')([
-      'dist','css/ns.css'
+      'dist','css/mb.css'
     ], done);
 });
 

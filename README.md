@@ -1,4 +1,4 @@
-# ns.css
+# mBase
 > Ns css is used in the movie business department of dianping.com
 
 Powered by Less & Postcss
@@ -8,13 +8,13 @@ Powered by Less & Postcss
 **Install with Bower:**
 
 ```shell
-$ bower install --save ns.css
+$ bower install --save mb-css
 ```
 
 # Build From Source
 
 ```shell
-$ git clone https://github.com/devWayne/ns.css.git
+$ git clone https://github.com/devWayne/mBase.git
 $ cd ns.css
 $ npm install
 $ gulp

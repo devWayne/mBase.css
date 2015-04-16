@@ -1,20 +1,20 @@
 {
-  "name": "ns.css",
+  "name": "mBase",
   "version": "0.0.0",
-  "description": "Native Style CSS",
+  "description": "mobile base stylesheet",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devWayne/ns.css.git"
+    "url": "https://github.com/devWayne/mBase.git"
   },
   "author": "Vi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devWayne/ns.css/issues"
+    "url": "https://github.com/devWayne/mBase/issues"
   },
-  "homepage": "https://github.com/devWayne/ns.css",
+  "homepage": "https://github.com/devWayne/mBase",
   "devDependencies": {
     "autoprefixer-core": "~5.1.7",
     "css-mqpacker": "~3.0.1",
