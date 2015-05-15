@@ -17,12 +17,15 @@
 .mb-fr{
 	float:right !important;
 }
-.flex() {
-    display: box;
+.mb-flex{
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: box;
 }
+.flex(){
+    display: -webkit-box;
+    display: box;
 
+}
 .boxFlex(@value:1){
     -webkit-box-flex:@value;
     box-flex:@value;

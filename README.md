@@ -8,31 +8,25 @@ Powered by Less & Postcss
 **Install with Bower:**
 
 ```shell
-$ bower install --save mb-css
+$ bower install --save mb.css
+
+$ bower install --save mb.lite.css
 ```
 
 # Build From Source
 
 ```shell
-$ git clone https://github.com/devWayne/mBase.git
-$ cd ns.css
+$ git clone https://github.com/devWayne/mBase.css.git
+$ cd mBase.css
 $ npm install
 $ gulp
 ```
 
-#Modules
+##Modules
 
-ns.css is based on three parts of modules : Base,Wigets and Hacks
+ns.css is based on three parts of modules : Elements,Components and Templates
 
-##Base
-
-1. grid
-
-2. form
-
-3. table
-
-##Elements
+####Elements
 
 1. buttton
 
@@ -44,11 +38,17 @@ ns.css is based on three parts of modules : Base,Wigets and Hacks
 
 5. star
 
-6. banner
+####Components
 
-##Text
+1. banner
 
-##Common
+2. caption
+
+3. list
+
+4. tip
+
+####Templates
 
 
 

@@ -1,56 +1,92 @@
-.btn(){
+/**
+ * Base style
+ */
+
+.btn(@display){
+  font-family: inherit;
   text-align: center;
-  border-radius: 2px;
+  border-radius: .25rem;
   font-size: 100%;
-  display: inline-block;
+  display: @display;
   padding: 0;
-  min-width:120px;
-  max-width:210px;
+  min-width:7.5rem;
   box-sizing:border-box;
 }
 
 
+/**
+ * Button pattern  
+ */
+
+.primary(){
+  color: white;
+  background: @color-T0;
+  border:solid 1px @color-T0;
+}
+
+.white(){
+  color: @color-T2;
+  background-color: white;
+  border:solid 1px #bbb;
+}
+
 .mb-btn-primary{
-  .btn();
-  color: #fff;
-  background: #f63;
-  border: none rgba(0, 0, 0, 0);
+  .btn(inline-block);
+  .primary();
 }
 
 .mb-btn-white{
-  .btn();
-  color: #666;
-  background: #fff;
-  border:solid 1px #bbb;
+  .btn(inline-block);
+  .white();
 }
+
+.mb-btn-primary-block-single{
+   .btn(block);
+   .primary();
+   margin :0 2em;
+   width :auto;
+}
+
+/**
+ * Button status
+ */
 
 .mb-btn-focus,
 .mb-btn:focus {
    background: #f26130;
+   border:0 !important;
 }
 
 .mb-btn-disable{
-   background: #cccccc;
+   background: @color-T4;
+   border:0 !important;
 }
 .mb-btn-awaiting{
    background: #ffc2ad;
+   border:0 !important;
 }
 
 
+/**
+ * Button size
+ */
+
 .mb-btn-sm{
-   font-size:14px;
-   height:30px;
+   font-size:.875rem;
+   height:1.875rem;
+   line-height:1.875rem;
 }
 
 .mb-btn-md{
-   font-size:16px;
-   height:35px;
-   padding: 0 20px;
+   font-size:1rem;
+   height:2.1875rem;
+   line-height:2.1875rem;
 }
 
 .mb-btn-lg{
-   font-size:18px;
-   height:44px;
-   border-radius:3px;
-   padding: 0 20px;
+   font-size:1.125rem;
+   height:2.75rem;
+   line-height:2.1875rem;
 }
+
+

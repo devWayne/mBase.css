@@ -11,31 +11,54 @@ var autoprefixer = require('autoprefixer-core');
 var mqpacker = require('css-mqpacker');
 var csswring = require('csswring');
 
+var processors = [
+    autoprefixer({
+        browsers: ['last 1 version']
+    }),
+    mqpacker,
+    csswring
+];
 
-gulp.task('img', function(){
-  gulp.src('src/img/**/*')
-    .pipe(gulp.dest('dist/img/'));
+gulp.task('img', function() {
+    gulp.src('src/img/**/*')
+        .pipe(gulp.dest('dist/img/'));
 });
 
 gulp.task('less', function() {
-  gulp.src('src/mb.less')
-    .pipe(less({
-      paths: [
-        path.join(__dirname, 'less')
-      ]
-    }))
-    //.on('error', console.error)
-    .pipe(gulp.dest('css/mb-css'));
+    gulp.src('src/mb.less')
+        .pipe(less({
+            paths: [
+                path.join(__dirname, 'less')
+            ]
+        }))
+        .on('error', console.error)
+	.pipe(postcss(processors))
+        .pipe(gulp.dest('dist'));
 });
 
-gulp.task('postcss', function () {
+gulp.task('less.lite', function() {
+    gulp.src('src/mb.lite.less')
+        .pipe(less({
+            paths: [
+                path.join(__dirname, 'less')
+            ]
+        }))
+        .on('error', console.error)
+	.pipe(postcss(processors))
+        .pipe(gulp.dest('dist'));
+});
+
+
+gulp.task('concat', function() {
     var processors = [
-        autoprefixer({browsers: ['last 1 version']}),
+        autoprefixer({
+            browsers: ['last 1 version']
+        }),
         mqpacker,
         csswring
     ];
     return gulp.src('css/**/*.css')
-    	.pipe(concat('mb.css'))
+        .pipe(concat('mb.css'))
         .pipe(postcss(processors))
         .pipe(gulp.dest('dist'));
 });
@@ -43,17 +66,15 @@ gulp.task('postcss', function () {
 
 gulp.task('clean', function(done) {
     require('del')([
-      'dist','css/mb.css'
+        'dist', 'css/mb.css'
     ], done);
 });
 
 
 gulp.task('default', function(cb) {
-  runSequence('clean','less','img','postcss', cb);
+    runSequence('clean', 'less', 'less.lite','img', cb);
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.less', ['default']);
+    gulp.watch('src/**/*.less', ['default']);
 });
-
-

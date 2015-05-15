@@ -1,54 +1,86 @@
+/**
+ *  x Axis
+ */
+
 .line-x(){
 	background-size: auto 1px;
 	background-repeat: repeat-x;
 }
+
+
+/**
+ * y Axis
+ */
 
 .line-y(){
 	background-size: 1px auto;
 	background-repeat: repeat-y;
 }
 
+
+/**
+ *  0.5px line in broswer
+ */
+
 .mb-line{
+
+	//line bottom
 	&-b{
 	background-image: url("@{line-image-folder}/repeat-x-bottom.png");
 	background-position: 0 bottom;
 	.line-x();
 	}
+
+	//line top
 	&-t{
 	background-image: url("@{line-image-folder}/repeat-x-top.png");
 	background-position: 0 top;
 	.line-x();
 	}
+
+	//line top &n button
 	&-tb{
 	background: url("@{line-image-folder}/repeat-x-top.png") 0 top repeat-x, url("@{line-image-folder}/repeat-x-bottom.png") 0px bottom repeat-x;
 	background-size: auto 1px;
 	.line-x();
 	}
+
+	//outline bottom
 	&-b-outline{
 	background-image: url("@{line-image-folder}/repeat-x-bottom-outline.png");
 	background-position: 0 bottom;
 	.line-x();
 	}
+
+	//outline top
 	&-t-outline{
 	background-image: url("@{line-image-folder}/repeat-x-top-outline.png");
 	background-position: 0 top;
 	.line-x();
 	}
+
+	//outling top & bottom
 	&-tb-outline{
 	background: url("@{line-image-folder}/repeat-x-top-outline.png") 0 top repeat-x, url("@{line-image-folder}/repeat-x-bottom-outline.png") 0px bottom repeat-x;
 	background-size: auto 1px;
 	.line-x();
-	}		
+	}
+
+	//line left
 	&-l{
 	background-image: url("@{line-image-folder}/repeat-y-left.png");
 	background-position: left 0;
 	.line-y();
 	}
+
+	//line right
 	&-r{
 	background-image: url("@{line-image-folder}/repeat-y-right.png");
 	background-position: right 0;
 	.line-y();
 	}
+
+	//line left & right
 	&-lr{
 	background: url("@{line-image-folder}/repeat-y-left.png") left 0px repeat-y, url("@{line-image-folder}/repeat-y-right.png") right 0px repeat-y;
 	background-size: 1px auto;
