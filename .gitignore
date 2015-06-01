@@ -31,5 +31,5 @@ node_modules
 *.swp
 *.swo
 bower_components
-
+neurons/
 css/normalize-css
