@@ -1,0 +1,31 @@
+{
+  "name": "mbase.css",
+  "version": "0.1.0",
+  "description": "mobile base stylesheet",
+  "main": "index.js",
+  "devDependencies": {
+    "assert": "*"
+  },
+  "dependencies": {},
+  "repository": "git://github.com/devWayne/mBase.css.git",
+  "keywords": [
+    "mabse",
+    "css"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "VI",
+    "email": "dev.wayne.ix@gmail.com"
+  },
+  "bugs": {
+    "url": "http://github.com/devWayne/mBase.css/issues"
+  },
+  "scripts": {
+    "prebuild": "gulp"
+  },
+  "directories": {
+    "src": "dist/"
+  },
+  "css":["dist/mb.css"],
+  "homepage": "http://github.com/devWayne/mBase.css"
+}
