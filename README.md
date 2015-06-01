@@ -50,7 +50,3 @@ ns.css is based on three parts of modules : Elements,Components and Templates
 
 ####Templates
 
-
-
-
-
