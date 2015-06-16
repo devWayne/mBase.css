@@ -184,20 +184,20 @@ li {
   top: -1px;
 }
 .mb-arrow.arrow-right {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 .mb-arrow.arrow-bottom {
-  transform: rotate(-315deg);
+  -webkit-transform: rotate(-315deg);
   position: relative;
   top: -2px;
 }
 .mb-arrow.arrow-top {
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
   position: relative;
   top: 2px;
 }
 .mb-arrow.arrow-left {
-  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
 }
 /**
  *  x Axis
