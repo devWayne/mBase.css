@@ -162,12 +162,10 @@ li {
 }
 .mb-btn-md {
   font-size: 1rem;
-  height: 2.1875rem;
   line-height: 2.1875rem;
 }
 .mb-btn-lg {
   font-size: 1.125rem;
-  height: 2.75rem;
   line-height: 2.1875rem;
 }
 /**
@@ -363,7 +361,7 @@ li {
   background-position: center -16px;
 }
 .mb-select.mutiple-disable {
-  background-position: center -155px;
+  background-position: center -154px;
 }
 .mb-select.mutiple-selected {
   background-position: center -202px;
