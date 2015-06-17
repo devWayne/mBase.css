@@ -9,22 +9,26 @@
   border-bottom: 2px solid #ccc;
   cursor: pointer;
   position: relative;
-  top: -1px;
   &.arrow-right {
-  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top:0px;
   }
   &.arrow-bottom {
-  transform: rotate(-315deg);
+  -webkit-transform: rotate(-315deg);
+  transform: rotate(-45deg);
   position: relative;
   top: -2px;
   }
   &.arrow-top {
-  transform: rotate(-135deg);
-  position: relative;
-  top: 2px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: 2px;
   }
   &.arrow-left {
-  transform: rotate(-225deg);
+   -webkit-transform: rotate(-225deg);
+   transform: rotate(-45deg);
   }
 }
 

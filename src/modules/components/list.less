@@ -1,18 +1,23 @@
 @import "../elements/outline.less";
 
 .mb-list-wrapper{
-	background: url("@{line-image-folder}/repeat-x-top-outline.png") 0 top repeat-x, url("@{line-image-folder}/repeat-x-bottom-outline.png") 0px bottom repeat-x;
-	background-size: auto 1px;
-	.line-x();
-	.mb-list-content{
-		margin: 0 0 0 20px;
-			.mb-list-line{
-		    		padding: 14px 16px 14px 16px;
-				margin:0px;
-				background-image: url("@{line-image-folder}/repeat-x-bottom.png");
-				background-position: 0 bottom;
-				.line-x();
-			}		
+	
+	.mb-list-line{
+		position: relative;
+		padding: 12px 16px;
+		&.mb-line-b{
+			&:last-child{
+				background-image: none;
+			}
+		}
+		.p-r{
+			position: absolute;
+			right: 15px;
+			top:50%;
+			color:@color-T3;
+			margin-top: -12px;
+		}
 	}
 }
+
 	
