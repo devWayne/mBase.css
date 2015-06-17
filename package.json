@@ -25,5 +25,7 @@
     "gulp-less": "~3.0.2",
     "gulp-postcss": "~4.0.3",
     "run-sequence": "~1.0.2"
-  }
+  },
+  "classify":"base",
+  "code":"git@code.dianpingoa.com:f2e/mbase-css.git"
 }
