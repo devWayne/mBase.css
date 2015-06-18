@@ -1,6 +1,6 @@
 {
   "name": "mbase.css",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "mobile base stylesheet",
   "main": "index.js",
   "devDependencies": {
@@ -9,7 +9,7 @@
   "dependencies": {},
   "repository": "git://github.com/devWayne/mBase.css.git",
   "keywords": [
-    "mabse",
+    "mbase",
     "css"
   ],
   "license": "MIT",

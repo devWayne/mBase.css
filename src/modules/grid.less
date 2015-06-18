@@ -1,9 +1,11 @@
 .mb-g {
-    display: -webkit-flex;
-    -webkit-flex-flow: row wrap;
-    /* IE10 uses display: flexbox */
-    display: -ms-flexbox;
-    -ms-flex-flow: row wrap;  
+    font-size: 0px;
+    clear: both;
+    &:after{
+        display: table;
+        content: "";
+        line-height: 0;
+    }
 }
 
 .mb-g-1,
@@ -52,12 +54,14 @@
 .mb-g-22-24,
 .mb-g-23-24,
 .mb-g-24-24 {
+    float:left;
     display: inline-block;
-    zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
+    -webkit-box-sizing: border-box;
+    font-size: 1rem;
 }
 
 .mb-g-1-24 {
