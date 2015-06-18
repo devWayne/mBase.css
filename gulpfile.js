@@ -70,9 +70,13 @@ gulp.task('clean', function(done) {
     ], done);
 });
 
+gulp.task('dist-example', function() {
+  return gulp.src('dist/**/*')
+    .pipe(gulp.dest('example/mb'));
+});
 
 gulp.task('default', function(cb) {
-    runSequence('clean', 'less', 'less.lite','img', cb);
+    runSequence('clean', 'less', 'less.lite','img','dist-example',cb);
 });
 
 gulp.task('watch', function() {

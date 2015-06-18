@@ -33,5 +33,5 @@ node_modules
 bower_components
 neurons/
 css/normalize-css
-dist/mb.css
-dist/mb.lite.css
+dist
+example/mb
