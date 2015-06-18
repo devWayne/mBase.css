@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/devWayne/mBase.git"
   },
-  "keywords":"css base",
+  "keywords": "css base",
   "author": "Vi",
   "license": "MIT",
   "bugs": {
@@ -21,12 +21,13 @@
     "css-mqpacker": "~3.0.1",
     "csswring": "~3.0.1",
     "del": "^1.1.1",
+    "gh-pages": "^0.3.1",
     "gulp": "~3.8.10",
     "gulp-concat": "^2.5.2",
     "gulp-less": "~3.0.2",
     "gulp-postcss": "~4.0.3",
     "run-sequence": "~1.0.2"
   },
-  "classify":"base",
-  "code":"git@code.dianpingoa.com:f2e/mbase-css.git"
+  "classify": "base",
+  "code": "git@code.dianpingoa.com:f2e/mbase-css.git"
 }
